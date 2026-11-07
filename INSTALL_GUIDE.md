@@ -6,14 +6,12 @@
 
 | File | Role |
 |---|---|
-| `index.html` | The app (map library and all logic included — **no customer data**) |
+| `index.html` | The app (619 customers, map library and all logic included) |
 | `manifest.webmanifest` | App name, icon and colours used for installation |
 | `sw.js` | Service worker: lets the app open and work without internet |
 | `icons/` | App icons (Android, iPhone) |
 
 All files must stay together, in the same folder structure.
-
-**Customer list (kept private):** `Uzuza_customers_Lot2_20261107.json` is delivered **separately** and must **never** be uploaded to GitHub — a GitHub Pages site is public. Send it to the agents by WhatsApp only.
 
 ---
 
@@ -37,8 +35,7 @@ A phone can only **install** the app from an **https** link. GitHub Pages is fre
 2. Chrome shows **"Install app"** (or ⋮ ▸ **Install app / Add to Home screen**). Confirm.
 3. The **Uzuza** icon appears on the home screen. Open it from there from now on.
 4. First opening: choose your name (top right), allow **Location** when asked.
-5. Download the customer list file received by WhatsApp, then in the app: **Data ▸ 📂 Load customer list** → choose `Uzuza_customers_….json`. The list stays on the phone (offline).
-6. Phone settings: **Location ON**, mode **High accuracy**.
+5. Phone settings: **Location ON**, mode **High accuracy**.
 
 iPhone: open the link in **Safari** ▸ Share ▸ **Add to Home Screen**.
 
@@ -64,4 +61,4 @@ Data stays on the phone until a backup is sent. **Never clear Chrome data** or u
 
 ## E. Supervisor
 
-On a PC, open the app (same link) → **Data** tab → **Load customer list** (same .json) → **Supervisor — merge backups** → select all agents' backup files → export **KMZ**, **Customers CSV**, **New poles CSV**, **GeoJSON**. Coordinates are given in WGS84 and ITRF2005 / Rwanda TM.
+On a PC, open the app (same link) → **Data** tab → **Supervisor — merge backups** → select all agents' backup files → export **KMZ**, **Customers CSV**, **New poles CSV**, **GeoJSON**. Coordinates are given in WGS84 and ITRF2005 / Rwanda TM.
